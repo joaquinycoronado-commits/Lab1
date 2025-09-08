@@ -5,7 +5,7 @@
  * @author Joaquin Coronado, joaquinycoronado@gmail.com
  * @version v1.0
  */
-public class Lab2diamond extends Lab2gtky
+public class Lab2diamond
 {
     public static void main (String[] args) {
         System.out.println("   *   ");

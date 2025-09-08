@@ -5,7 +5,7 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-public class Lab2imprecision extends Lab2gtky
+public class Lab2imprecision
 {
     public static void main(String[] args) {
     double x = 12345.6789e200;
