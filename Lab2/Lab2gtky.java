@@ -1,3 +1,5 @@
+package Lab2;
+
 
 /**
  * This is a three-line program with my name, City College major

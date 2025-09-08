@@ -1,3 +1,5 @@
+package Lab2;
+
 
 /**
  * Write a description of class Lab2imprecision here.

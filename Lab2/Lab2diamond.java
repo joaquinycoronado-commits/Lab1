@@ -1,3 +1,5 @@
+package Lab2;
+
 
 /**
  * This is a simple program displaying a diamond shape made of asterisks.
