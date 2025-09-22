@@ -12,14 +12,14 @@ import java.util.Scanner;
 public class ProgChall2
 {
     public static void main (String[] args){
-        Scanner scanner = new Scanner(System.in);
+        Scanner keyboard = new Scanner(System.in);
         
         System.out.print("Enter your first name: ");
-        String firstName = scanner.nextLine();
+        String firstName = keyboard.nextLine();
         System.out.print("Enter your middle name: ");
-        String middleName = scanner.nextLine();
+        String middleName = keyboard.nextLine();
         System.out.print("Enter your last name: ");
-        String lastName = scanner.nextLine();
+        String lastName = keyboard.nextLine();
         
         char firstInit = firstName.toUpperCase().charAt(0);
         char middleInit = middleName.toUpperCase().charAt(0);
@@ -31,7 +31,7 @@ public class ProgChall2
         System.out.println("My initials are: " + firstInit + "" 
         + middleInit + "" + lastInit);
         
-        scanner.close();
+        keyboard.close();
     
     }
 }

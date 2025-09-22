@@ -14,20 +14,19 @@ import java.util.Scanner;
 public class ProgChall13
 {
     public static void main (String[] args){
-        Scanner scanner = new Scanner(System.in);
-        
-        final double taxValue = 1.72;
-        final double tipValue = 5.10;
+        Scanner keyboard = new Scanner(System.in);
         
         System.out.print("Enter meal amount: " + "$");
-        double priceValue = scanner.nextDouble();
+        double priceValue = keyboard.nextDouble();
+        final double taxValue = 0.0675 * priceValue;
+        final double tipValue = 0.2 * priceValue;
+        double totalCost = taxValue + tipValue + priceValue;
         
-        System.out.println();
-        System.out.println("The tax is: " + "$" + taxValue);
-        System.out.println("The tip is: " + "$" + tipValue);
-        System.out.println("The meal cost with tax and tip is: " + "$" +
-        (taxValue + tipValue + priceValue));
+        System.out.printf("\nThe tax is: $%,.2f", taxValue);
+        System.out.printf("\nThe tip amount is: $%,.2f", tipValue);
+        System.out.printf("\nThe meal cost with tax and tip is: $%,.2f",
+        totalCost);
         
-        scanner.close();
+        keyboard.close();
     }
 }

@@ -12,10 +12,10 @@ import java.util.Scanner;
 public class ProgChall12
 {
     public static void main(String[] args){
-        Scanner scanner = new Scanner(System.in);
+        Scanner keyboard = new Scanner(System.in);
         
         System.out.print("Enter a city: ");
-        String cityInput = scanner.nextLine();
+        String cityInput = keyboard.nextLine();
     
         System.out.println();
         System.out.println("The city entered has: " + cityInput.length()
@@ -24,6 +24,6 @@ public class ProgChall12
         System.out.println("In lower case: " + cityInput.toLowerCase());
         System.out.println("First character: " + cityInput.charAt(0));
         
-        scanner.close();
+        keyboard.close();
     }
 }

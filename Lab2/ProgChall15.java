@@ -15,23 +15,19 @@ import java.util.Scanner;
 public class ProgChall15
 {
     public static void main (String[] args){
-        Scanner scanner = new Scanner(System.in);
-        
-        final double commissionPrice = 261.24;
+        Scanner keyboard = new Scanner(System.in);
         
         System.out.print("Enter number of shares purchased: ");
-        double shareCount = scanner.nextDouble();
+        double shareCount = keyboard.nextDouble();
         System.out.print("Enter price per share: " + "$");
-        double sharePrice = scanner.nextDouble();
+        double sharePrice = keyboard.nextDouble();
         double sharePriceTotal = shareCount*sharePrice;
+        final double commissionPrice = 0.02 * sharePriceTotal;
+        double TotalCost = commissionPrice+sharePriceTotal;
         
-        System.out.println();
-        System.out.println("Total cost of shares are: " + "$" + (sharePriceTotal
-        ));
-        System.out.println("Commission cost is: " + "$" + commissionPrice +
-        "\nTotal Cost is: " + "$" + (sharePriceTotal+
-        commissionPrice));
+        System.out.printf("Total cost of shares are: $%,.2f\nCommission cost is: $%,.2f\nTotal Cost is: $%,.2f",sharePriceTotal, commissionPrice, TotalCost);
         
-        scanner.close();
+        keyboard.close();
     }
 }
+
