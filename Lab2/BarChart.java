@@ -3,10 +3,12 @@ import java.util.Random;
 
 
 /**
- * Write a description of class BarChart here.
+ * This program will generate three random numbers and then an amount
+ * of stars equal to each number divided by 100, excluding the remainder.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Joaquin Coronado, joaquinycoronado@gmail.com
+ * @since 9/28/2025
+ * @version v1.0
  */
 public class BarChart
 {
