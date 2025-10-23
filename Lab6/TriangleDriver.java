@@ -1,4 +1,4 @@
-package Lab2;
+package Lab6;
 
 /**
 * TriangleDriver for MidTerm Exam Prep 
@@ -6,7 +6,7 @@ package Lab2;
 * @version 1.0.0 
 * @since 10/13/2025
 */
-public class TriangleDriver { //Change to Main for Replit or MyProgram for codeHS
+public class TriangleDriver {
     public static void main(String args[]) {
         System.out.println("First Triangle");
         System.out.println("--------------");

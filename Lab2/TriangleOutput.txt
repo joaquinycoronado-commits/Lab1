@@ -1,0 +1,29 @@
+First Triangle
+--------------
+Triangle name is: Placeholder
+Triangle base is: 0.0
+Triangle height is: 0.0
+The area is 0.0
+
+Triangle name is: Tri1
+Triangle base is: 5.0
+Triangle height is: 6.0
+The area is 15.0
+
+Second Triangle
+--------------
+Triangle name is: Tri2
+Triangle base is: 7.3
+Triangle height is: 8.3
+The area is 30.3
+
+Third Triangle
+--------------
+Enter a name for your triangle: testertriangle
+8
+9
+Triangle name is: testertriangle
+Triangle base is: 8.0
+Triangle height is: 9.0
+The area is 36.0
+
