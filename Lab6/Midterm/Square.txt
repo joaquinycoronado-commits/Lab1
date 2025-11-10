@@ -1,0 +1,21 @@
+
+First Square
+------------
+Name: Square 1
+Side length: 5.432000 
+Perimiter: 21.73
+
+Second Square
+------------
+Enter the Square's name: Square 2
+Enter the Square's side length: 10
+Name: Square 2
+Side length: 10.000000 
+Perimiter: 40.00
+
+Third Square
+-------------
+Name: Square 3
+Side length: 1.234000 
+Perimiter: 4.94
+Congrats you have completed the 1st half of Java!

@@ -14,6 +14,10 @@ public class Triangle {
     private double base;
     private double height;
     
+    /**
+     * Presets the name, base and height of the 
+     * triangle with placeholder values.
+     */
     public Triangle(){
         name = "Placeholder";
         base = 0.0;
@@ -21,11 +25,9 @@ public class Triangle {
         
     }
     /**
-     * The name, base, and height values of the 
-     * triangle.
+     * Records the set name, base, and height values 
+     * of the triangle.
      * @param inName, inBase, height
-     * 
-     * 
      */
     public Triangle(String inName, double inBase, double height){
         name = inName;
@@ -33,37 +35,32 @@ public class Triangle {
         this.height = height;
     }
     /**
-     * This method will calculate a number to 
-     * determine whether it is prime or not.
+     * This method sets the name of the triangle.
      * @param name The name entered by the user.
-     * 
      */
     public void setName(String name){
         this.name = name;
     }
     /**
-     * This method will calculate a number to 
-     * determine whether it is prime or not.
-     * @param base The base entered by the user.
-     * 
+     * This method sets the base value
+     * of the triangle.
+     * @param base The base entered by the user. 
      */
     public void setBase(double base){
         this.base = base;
     }
     /**
-     * This method will calculate a number to 
-     * determine whether it is prime or not.
-     * @param height The height entered by the user.
-
-     * 
+     * This method sets the height value of the
+     * triangle.
+     * @param height The height entered by the 
+     * user.
      */
     public void setHeight(double height){
         this.height = height;
     }
     /**
-     * This method will record the name, base and height of a triangle.
-     *
-     * 
+     * This method will collect the set name, base 
+     * and height of the triangle from the user.
      */
      public void readInput(){
         Scanner keyboard = new Scanner(System.in);
@@ -74,16 +71,15 @@ public class Triangle {
         height = keyboard.nextDouble();
     }
     /**
-     * 
-     * @return calculates the area of the triangle.
-     * 
+     * Calculates the area of the triangle.
+     * @return getArea the calculated area.
      */
     private double getArea(){
         return ((base * height) * 0.5);
     }
     /**
-     * This method will write the name, base, height, and area.
-     * 
+     * This method will write and display the 
+     * name, base, height, and area to the user.
      */
     public void writeOutput(){
         System.out.println("Triangle name is: " + name);
