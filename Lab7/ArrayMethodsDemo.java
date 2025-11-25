@@ -1,4 +1,6 @@
-package Lab7;
+package Lab7
+
+;
 import java.util.Arrays;
 
 
@@ -42,7 +44,7 @@ public class ArrayMethodsDemo
         test.print(copyOfMyArray);
         System.out.println("myArray[] and copyOfMyArray[] are equal: " +
         Arrays.equals(test.getArray(),copyOfMyArray));
-        test.reverseArray(copyOfMyArray);
+        copyOfMyArray = test.reverseArray(copyOfMyArray);
         System.out.print("copyOfMyArray[] reversed is: ");
         test.print(copyOfMyArray);
         System.out.println("myArray[] and copyOfMyArray[] are equal: " +

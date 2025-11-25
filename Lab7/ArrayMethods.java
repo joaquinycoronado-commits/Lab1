@@ -1,5 +1,5 @@
 package Lab7;
-import java.util.Arrays;
+import java.util.*;
 
 /**
  * Prints and returns several characteristics of an array, including total amount of 
@@ -68,14 +68,76 @@ public class ArrayMethods{
      * prints an int array, nicely formatted
     @param inArray int array to print
     */
-    public void print(int[ ] inArray)
-    {
-    System.out.print("{");
-    int i;
-    for (i = 0; i < inArray.length - 1; i++)
-    System.out.print(inArray[i] + ", ");
-    if (inArray.length > 0)
-    System.out.print(inArray[i]);
-    System.out.println("}");
+    public void print(int[ ] inArray){
+        {
+        System.out.print("{");
+        int i;
+        for (i = 0; i < inArray.length - 1; i++)
+        System.out.print(inArray[i] + ", ");
+        if (inArray.length > 0)
+        System.out.print(inArray[i]);
+        System.out.println("}");
+        } 
     }
-} 
+    /**
+     * Finds and prints the index value of the right-most array number with the given 
+     * value.
+     * @return lastKeyVal the index value of such number.
+     */
+    public int findLast(int key){
+        int lastKeyVal = -1;
+        for(int i=myArray.length-1;i>=0;i--){
+            if(lastKeyVal==-1&&key==myArray[i])
+            lastKeyVal = i;
+        }
+        return lastKeyVal;
+    }
+    /**
+     * Finds and prints the index value(s) of all array numbers with the given value.
+     * @return findAll the index values of such variables.
+     */
+    public int[] findAll(int key){
+        int i;
+        int j;
+        int k;
+        int ArraySize = 0;
+        for(i=0;i<myArray.length;i++){
+            if(key==myArray[i])
+            ArraySize++;
+        }
+        int[] newArray = new int[ArraySize];
+        for(k=0,j=0;k<myArray.length;k++){
+            if(key==myArray[k]){
+            newArray[j]=k;
+            j++;
+            }
+        }
+        return newArray;
+    }
+    /**
+     * Returns the original array, as initialized.
+     * @return the original array.
+     */
+    public int[] getArray(){
+        return myArray;
+    }
+    /**
+     * Returns a copy of the original array.
+     * @return a copy of the original array.
+     */
+    public int[] copyArray(){
+        int[] copiedArray=Arrays.copyOf(myArray,myArray.length);
+        return copiedArray;
+    }
+    public int[] reverseArray(int[] inArray){  
+        int[] myArrayCopy = new int [inArray.length];
+        int j = 0;
+        
+        for(int i=inArray.length-1;i>=0;i--){
+        myArrayCopy[j] = inArray[i];
+        j++;
+        }
+        print(myArrayCopy);
+        return myArrayCopy;
+    }
+}
