@@ -62,7 +62,6 @@ public class ArrayMethods{
         while(findMax()!=myArray[i])
         i++;
         return i;
-
     }
     /**
      * prints an int array, nicely formatted

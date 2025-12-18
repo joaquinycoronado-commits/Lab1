@@ -36,7 +36,7 @@ public class CarpetCost
         size = new RoomSize(RoomSize.name, RoomSize.length, RoomSize.width);
         return CostPerSqFt*size.getArea();
     }
-     
+    
     /**
      * Prints the total and unit cost (per square foot) of the
      * carpet.
